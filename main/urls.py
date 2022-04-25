@@ -6,5 +6,6 @@ from main import views
 
 urlpatterns = [
     path('', views.home, name='Home'),
-    path('history', views.makeHistory, name='History')
+    path('history', views.makeHistory, name='History'),
+    path('filter', views.histFilter, name='Filter')
 ]

@@ -4,8 +4,12 @@ from django.shortcuts import render, HttpResponse
 
 def home(request):
 
-    return HttpResponse('Inicio')
+    return render(request, 'index.html')
 
 def makeHistory(request):
 
-    return HttpResponse('Make History')
+    return render(request, 'history.html')
+
+def histFilter(request):
+
+    return render(request, 'filter.html')
